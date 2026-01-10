@@ -1,4 +1,6 @@
 import React from "react";
+import { IoFilter } from "react-icons/io5";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Products() {
   return (
@@ -12,15 +14,8 @@ export default function Products() {
           }}
           className="relative w-full bg-cover bg-center bg-no-repeat"
           data-alt="Dark green textured background representing agriculture"
-          //     style="
-          //   background-image: linear-gradient(
-          //       rgba(0, 0, 0, 0.5) 0%,
-          //       rgba(0, 0, 0, 0.7) 100%
-          //     ),
-          //     ;
-          // "
         >
-          <div className="w-full max-w-[1440px] mx-auto px-4 lg:px-10 py-16 md:py-20 flex flex-col justify-center min-h-[300px]">
+          <div className="w-full max-w[1440px] mx-auto px-4 lg:px-10 py-16 md:py-20 flex flex-col justify-center min-h-[300px]">
             <h1 className="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] mb-4">
               Premium Mushroom Catalog
             </h1>
@@ -32,20 +27,20 @@ export default function Products() {
           </div>
         </div>
         {/* <!-- Main Content Layout --> */}
-        <div className="flex flex-col lg:flex-row gap-8 max-w-[1440px] mx-auto w-full px-4 lg:px-10 py-12 flex-1">
+        <div className="flex flex-col lg:flex-row gap-8 max-w[1440px] mx-auto w-full px-4 lg:px-10 py-12 flex-1">
           {/* <!-- Sidebar Filters --> */}
           <aside className="w-full lg:w-72 shrink-0 space-y-8">
             <div className="sticky top-24">
               <div className="flex items-center gap-2 mb-6">
                 <span className="material-symbols-outlined text-text-main dark:text-white">
-                  filter_list
+                  <IoFilter size={20} />
                 </span>
                 <h3 className="text-text-main dark:text-white text-lg font-bold">
                   Categories
                 </h3>
               </div>
               <div className="flex flex-col gap-3">
-                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p-[15px] hover:border-primary transition-colors">
+                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p[15px] hover:border-primary transition-colors">
                   <input
                     checked=""
                     className="h-5 w-5 border-2 border-border-active bg-transparent text-transparent checked:border-primary checked:bg-primary checked:focus:border-primary focus:ring-0 focus:ring-offset-0 radio-checked-bg"
@@ -56,12 +51,12 @@ export default function Products() {
                     <p className="text-text-main dark:text-white text-sm font-medium leading-normal group-hover:text-primary transition-colors">
                       All Products
                     </p>
-                    <p className="text-text-muted text-xs font-normal leading-normal">
+                    <p className="text-text-side text-xs font-normal leading-normal">
                       View full catalog
                     </p>
                   </div>
                 </label>
-                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p-[15px] hover:border-primary transition-colors">
+                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p[15px] hover:border-primary transition-colors">
                   <input
                     className="h-5 w-5 border-2 border-border-active bg-transparent text-transparent checked:border-primary checked:bg-primary checked:focus:border-primary focus:ring-0 focus:ring-offset-0 radio-checked-bg"
                     name="category"
@@ -71,12 +66,12 @@ export default function Products() {
                     <p className="text-text-main dark:text-white text-sm font-medium leading-normal group-hover:text-primary transition-colors">
                       Seeds / Spawn
                     </p>
-                    <p className="text-text-muted text-xs font-normal leading-normal">
+                    <p className="text-text-side text-xs font-normal leading-normal">
                       Oyster, Milky, Button
                     </p>
                   </div>
                 </label>
-                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p-[15px] hover:border-primary transition-colors">
+                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p[15px] hover:border-primary transition-colors">
                   <input
                     className="h-5 w-5 border-2 border-border-active bg-transparent text-transparent checked:border-primary checked:bg-primary checked:focus:border-primary focus:ring-0 focus:ring-offset-0 radio-checked-bg"
                     name="category"
@@ -86,12 +81,12 @@ export default function Products() {
                     <p className="text-text-main dark:text-white text-sm font-medium leading-normal group-hover:text-primary transition-colors">
                       Value-Added
                     </p>
-                    <p className="text-text-muted text-xs font-normal leading-normal">
+                    <p className="text-text-side text-xs font-normal leading-normal">
                       Pickles, Powders
                     </p>
                   </div>
                 </label>
-                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p-[15px] hover:border-primary transition-colors">
+                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p[15px] hover:border-primary transition-colors">
                   <input
                     className="h-5 w-5 border-2 border-border-active bg-transparent text-transparent checked:border-primary checked:bg-primary checked:focus:border-primary focus:ring-0 focus:ring-offset-0 radio-checked-bg"
                     name="category"
@@ -101,17 +96,17 @@ export default function Products() {
                     <p className="text-text-main dark:text-white text-sm font-medium leading-normal group-hover:text-primary transition-colors">
                       Fresh Produce
                     </p>
-                    <p className="text-text-muted text-xs font-normal leading-normal">
+                    <p className="text-text-side text-xs font-normal leading-normal">
                       Farm fresh harvest
                     </p>
                   </div>
                 </label>
               </div>
-              <div className="mt-8 p-6 bg-primary/10 rounded-xl border border-primary/20">
+              <div className="mt-9 p-8 bg-primary/10 rounded-xl border border-primary/20">
                 <h4 className="font-bold text-text-main dark:text-white mb-2">
                   Need Custom Orders?
                 </h4>
-                <p className="text-sm text-text-muted mb-4">
+                <p className="text-sm text-text-side mb-4">
                   We handle bulk requests for commercial farming.
                 </p>
                 <button className="w-full py-2 px-4 bg-white border border-primary text-primary font-bold rounded-lg text-sm hover:bg-primary hover:text-text-main transition-colors">
@@ -146,9 +141,6 @@ export default function Products() {
                       }}
                       className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
                       data-alt="Close up of white oyster mushrooms growing"
-                      //     style="
-                      //   background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBB8KOZYnOeIsynRjdgAzjtj9yoEhznvJ1GTpddc-0Lt8k77yK-AW8SS2429pGZyLwbJ6PvG-5kV0Sfwi4_3iWP_BFMqaBAvbeDnQwduOj3yU1owBuQWUX1Gg3hkeslF4Ge2MWxZfCJ8xj2ygJQMGuTva8zcKdbTUqjy_DCh9CyZibuasAPnW9AJq-AshVzPJnHdKQEioh1zpPrp9D9ogS0uvcQizA1qtoSr_gcTbaJiVGt_9Xqm1eSPjv_ohnkwD3UqKPd60rRCes');
-                      // "
                     ></div>
                     <div className="absolute top-3 left-3 bg-primary text-text-main text-xs font-bold px-2 py-1 rounded-full">
                       High Yield
@@ -160,15 +152,15 @@ export default function Products() {
                         Oyster Mushroom Spawn
                       </h3>
                     </div>
-                    <p className="text-text-muted text-sm line-clamp-2 mb-4">
+                    <p className="text-text-side text-sm line-clamp-2 mb-4">
                       Laboratory certified, contamination-free spawn suitable
                       for all seasons. Fast colonization rate.
                     </p>
                     <div className="flex items-center gap-2 mb-4 flex-wrap">
-                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-2 py-1 rounded">
+                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-3 py-2 rounded">
                         Organic
                       </span>
-                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-2 py-1 rounded">
+                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-3 py-2 rounded">
                         Lab Tested
                       </span>
                     </div>
@@ -179,7 +171,7 @@ export default function Products() {
                       <button className="text-sm font-bold text-primary flex items-center gap-1 hover:gap-2 transition-all">
                         Details
                         <span className="material-symbols-outlined text-lg">
-                          arrow_forward
+                          <FaArrowRightLong />
                         </span>
                       </button>
                     </div>
@@ -195,9 +187,6 @@ export default function Products() {
                       }}
                       className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
                       data-alt="Close up of white button mushrooms in soil"
-                      //     style="
-                      //   background-image: ;
-                      // "
                     ></div>
                     <div className="absolute top-3 left-3 bg-white/90 text-text-main text-xs font-bold px-2 py-1 rounded-full">
                       Commercial Grade
@@ -207,12 +196,12 @@ export default function Products() {
                     <h3 className="text-lg font-bold text-text-main dark:text-white mb-2 group-hover:text-primary transition-colors">
                       Button Mushroom Spawn
                     </h3>
-                    <p className="text-text-muted text-sm line-clamp-2 mb-4">
+                    <p className="text-text-side text-sm line-clamp-2 mb-4">
                       Premium Agaricus bisporus strains designed for controlled
                       environment agriculture. Excellent shelf life.
                     </p>
                     <div className="flex items-center gap-2 mb-4 flex-wrap">
-                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-2 py-1 rounded">
+                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-3 py-2 rounded">
                         High Protein
                       </span>
                     </div>
@@ -223,7 +212,7 @@ export default function Products() {
                       <button className="text-sm font-bold text-primary flex items-center gap-1 hover:gap-2 transition-all">
                         Details
                         <span className="material-symbols-outlined text-lg">
-                          arrow_forward
+                          <FaArrowRightLong />
                         </span>
                       </button>
                     </div>
@@ -245,12 +234,12 @@ export default function Products() {
                     <h3 className="text-lg font-bold text-text-main dark:text-white mb-2 group-hover:text-primary transition-colors">
                       Milky Mushroom Spawn
                     </h3>
-                    <p className="text-text-muted text-sm line-clamp-2 mb-4">
+                    <p className="text-text-side text-sm line-clamp-2 mb-4">
                       Ideal for tropical climates. Robust growth and large
                       fruiting bodies with extended keeping quality.
                     </p>
                     <div className="flex items-center gap-2 mb-4 flex-wrap">
-                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-2 py-1 rounded">
+                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-3 py-2 rounded">
                         Heat Tolerant
                       </span>
                     </div>
@@ -261,7 +250,7 @@ export default function Products() {
                       <button className="text-sm font-bold text-primary flex items-center gap-1 hover:gap-2 transition-all">
                         Details
                         <span className="material-symbols-outlined text-lg">
-                          arrow_forward
+                            <FaArrowRightLong />
                         </span>
                       </button>
                     </div>
@@ -302,12 +291,12 @@ export default function Products() {
                     <h3 className="text-lg font-bold text-text-main dark:text-white mb-2 group-hover:text-primary transition-colors">
                       Spicy Mushroom Pickle
                     </h3>
-                    <p className="text-text-muted text-sm line-clamp-2 mb-4">
+                    <p className="text-text-side text-sm line-clamp-2 mb-4">
                       A tangy and spicy blend of oyster mushrooms and
                       traditional spices. No artificial preservatives.
                     </p>
                     <div className="flex items-center gap-2 mb-4 flex-wrap">
-                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-2 py-1 rounded">
+                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-3 py-2 rounded">
                         Ready to Eat
                       </span>
                     </div>
@@ -318,7 +307,7 @@ export default function Products() {
                       <button className="text-sm font-bold text-primary flex items-center gap-1 hover:gap-2 transition-all">
                         Details
                         <span className="material-symbols-outlined text-lg">
-                          arrow_forward
+                           <FaArrowRightLong />
                         </span>
                       </button>
                     </div>
@@ -340,15 +329,15 @@ export default function Products() {
                     <h3 className="text-lg font-bold text-text-main dark:text-white mb-2 group-hover:text-primary transition-colors">
                       Mushroom Protein Powder
                     </h3>
-                    <p className="text-text-muted text-sm line-clamp-2 mb-4">
+                    <p className="text-text-side text-sm line-clamp-2 mb-4">
                       100% vegan protein supplement made from dried mushrooms.
                       Great for soups and smoothies.
                     </p>
                     <div className="flex items-center gap-2 mb-4 flex-wrap">
-                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-2 py-1 rounded">
+                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-3 py-2 rounded">
                         Vegan
                       </span>
-                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-2 py-1 rounded">
+                      <span className="bg-primary/10 text-text-main text-[10px] uppercase font-bold px-3 py-2 rounded">
                         Gluten Free
                       </span>
                     </div>
@@ -359,7 +348,7 @@ export default function Products() {
                       <button className="text-sm font-bold text-primary flex items-center gap-1 hover:gap-2 transition-all">
                         Details
                         <span className="material-symbols-outlined text-lg">
-                          arrow_forward
+                          <FaArrowRightLong />
                         </span>
                       </button>
                     </div>
@@ -378,7 +367,7 @@ export default function Products() {
             <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-4">
               Interested in Bulk Orders?
             </h2>
-            <p className="text-text-muted max-w-lg mb-8 text-lg">
+            <p className="text-text-side max-w-lg mb-8 text-lg">
               Get a customized quote for commercial farming spawn or wholesale
               product distribution.
             </p>
@@ -396,7 +385,7 @@ export default function Products() {
                 Request Quote
               </button>
             </form>
-            <p className="mt-4 text-xs text-text-muted">
+            <p className="mt-4 text-l text-text-side">
               We respect your privacy. No spam.
             </p>
           </div>
