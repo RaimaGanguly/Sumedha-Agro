@@ -15,7 +15,7 @@ export default function Products() {
           className="relative w-full bg-cover bg-center bg-no-repeat"
           data-alt="Dark green textured background representing agriculture"
         >
-          <div className="w-full max-w[1440px] mx-auto px-4 lg:px-10 py-16 md:py-20 flex flex-col justify-center min-h-[300px]">
+          <div className="w-full max-w[1440px] mx-auto px-4 lg:px-10 py-16 md:py-20 flex flex-col justify-center min-h-300px">
             <h1 className="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] mb-4">
               Premium Mushroom Catalog
             </h1>
@@ -133,7 +133,7 @@ export default function Products() {
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {/* <!-- Product Card 1 --> */}
                 <div className="group flex flex-col bg-white dark:bg-white/5 rounded-xl border border-border-light dark:border-white/10 overflow-hidden hover:shadow-lg hover:border-primary/50 transition-all duration-300">
-                  <div className="aspect-[4/3] w-full bg-gray-100 relative overflow-hidden">
+                  <div className="aspect-4/3 w-full bg-gray-100 relative overflow-hidden">
                     <div
                       style={{
                         backgroundImage:
@@ -179,7 +179,7 @@ export default function Products() {
                 </div>
                 {/* <!-- Product Card 2 --> */}
                 <div className="group flex flex-col bg-white dark:bg-white/5 rounded-xl border border-border-light dark:border-white/10 overflow-hidden hover:shadow-lg hover:border-primary/50 transition-all duration-300">
-                  <div className="aspect-[4/3] w-full bg-gray-100 relative overflow-hidden">
+                  <div className="aspect-4/3 w-full bg-gray-100 relative overflow-hidden">
                     <div
                       style={{
                         backgroundImage:
@@ -220,7 +220,7 @@ export default function Products() {
                 </div>
                 {/* <!-- Product Card 3 --> */}
                 <div className="group flex flex-col bg-white dark:bg-white/5 rounded-xl border border-border-light dark:border-white/10 overflow-hidden hover:shadow-lg hover:border-primary/50 transition-all duration-300">
-                  <div className="aspect-[4/3] w-full bg-gray-100 relative overflow-hidden">
+                  <div className="aspect-4/3 w-full bg-gray-100 relative overflow-hidden">
                     <div
                       style={{
                         backgroundImage:
@@ -274,7 +274,7 @@ export default function Products() {
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {/* <!-- Product Card 4 --> */}
                 <div className="group flex flex-col bg-white dark:bg-white/5 rounded-xl border border-border-light dark:border-white/10 overflow-hidden hover:shadow-lg hover:border-primary/50 transition-all duration-300">
-                  <div className="aspect-[4/3] w-full bg-gray-100 relative overflow-hidden">
+                  <div className="aspect-4/3 w-full bg-gray-100 relative overflow-hidden">
                     <div
                       style={{
                         backgroundImage:
@@ -315,7 +315,7 @@ export default function Products() {
                 </div>
                 {/* <!-- Product Card 5 --> */}
                 <div className="group flex flex-col bg-white dark:bg-white/5 rounded-xl border border-border-light dark:border-white/10 overflow-hidden hover:shadow-lg hover:border-primary/50 transition-all duration-300">
-                  <div className="aspect-[4/3] w-full bg-gray-100 relative overflow-hidden">
+                  <div className="aspect-4/3 w-full bg-gray-100 relative overflow-hidden">
                     <div
                       style={{
                         backgroundImage:
@@ -360,7 +360,7 @@ export default function Products() {
         </div>
         {/* <!-- Lead Generation / Footer Section --> */}
         <div className="bg-[#eefcee] dark:bg-background-dark border-t border-primary/20 mt-auto">
-          <div className="max-w-[960px] mx-auto px-4 py-16 flex flex-col items-center text-center">
+          <div className="max-w-960px mx-auto px-4 py-16 flex flex-col items-center text-center">
             <span className="bg-white dark:bg-white/10 text-primary border border-primary/20 rounded-full px-3 py-1 text-xs font-bold tracking-wider uppercase mb-4">
               Partner With Us
             </span>

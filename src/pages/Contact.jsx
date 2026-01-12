@@ -36,10 +36,10 @@ export default function Contact() {
                 backgroundImage:
                   "url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8QJ8Y5YwPYBrLIffDh8CLPsd6PDKPhDZ8rWN3jlmO1OuqSjjhMooAG-t1dVRcGD5KbwgF6jywRqimHxcwlmGf_akKObYLWlk-PL6lZDBpC91EVtsFmZReZixrPaZCWpWQ33Deh5pYyljkCNiMe1NP7hXNaY-k6WDffixeTdxQxBHqsvrZeSo64a-GhGO0AuAzvRoCQIGcDPlTvXq7GxVnS25NtuY5TkvQooYzUGMg5_3g7Hstfami4jciKzOUgvMSVd1JvLXYU6E')",
               }}
-              className="aspect-[4/3] w-full rounded-2xl bg-cover bg-center shadow-2xl relative overflow-hidden group"
+              className="aspect-4/3 w-full rounded-2xl bg-cover bg-center shadow-2xl relative overflow-hidden group"
               data-alt="Close up of fresh organic mushrooms growing in a farm environment"
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-tot from-black/50 to-transparent"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <p className="text-sm font-bold uppercase tracking-wider mb-1 text-primary">
                   Our Farm

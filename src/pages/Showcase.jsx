@@ -5,6 +5,10 @@ import { FaDotCircle } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 import { IoWater } from "react-icons/io5";
 import { TbTemperature } from "react-icons/tb";
+import { IoFlaskOutline } from "react-icons/io5";
+import { MdSpoke } from "react-icons/md";
+import { WiHumidity } from "react-icons/wi";
+import { MdOutlineShoppingBasket } from "react-icons/md";
 
 export default function Showcase() {
   return (
@@ -63,7 +67,7 @@ export default function Showcase() {
           </div>
         </section>
         {/* <!-- Product Selector / Tabs --> */}
-        <section className="border-b border-[#cfe7cf] dark:border-[#2a442a] sticky top-[73px] bg-background-light dark:bg-background-dark z-40 pt-4">
+        <section className="border-b border-#cfe7cf dark:border-[#2a442a] sticky top-73px bg-background-light dark:bg-background-dark z-40 pt-4">
           <div className="flex overflow-x-auto no-scrollbar gap-8 pb-px">
             <a
               className="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-[#0d1b0d] dark:text-white min-w-max pb-3 px-2 transition-colors cursor-pointer group"
@@ -71,7 +75,7 @@ export default function Showcase() {
             >
               <div className="bg-primary/10 p-2 rounded-full mb-2 group-hover:bg-primary/20 transition-colors">
                 <span className="material-symbols-outlined text-primary fill-current">
-                  <BsStars Size={40}/>
+                  <BsStars size={30}/>
                 </span>
               </div>
               <p className="text-sm font-bold tracking-wide">Oyster Mushroom</p>
@@ -82,7 +86,7 @@ export default function Showcase() {
             >
               <div className="bg-gray-100 dark:bg-surface-dark p-2 rounded-full mb-2 group-hover:bg-primary/10 transition-colors">
                 <span className="material-symbols-outlined group-hover:text-primary">
-                  <FaDotCircle />
+                  <FaDotCircle size={20} />
                 </span>
               </div>
               <p className="text-sm font-bold tracking-wide">Button Mushroom</p>
@@ -93,7 +97,7 @@ export default function Showcase() {
             >
               <div className="bg-gray-100 dark:bg-surface-dark p-2 rounded-full mb-2 group-hover:bg-primary/10 transition-colors">
                 <span className="material-symbols-outlined group-hover:text-primary">
-                  <FaDotCircle />
+                  <FaDotCircle size={20} />
                 </span>
               </div>
               <p className="text-sm font-bold tracking-wide">Milky Mushroom</p>
@@ -206,12 +210,12 @@ export default function Showcase() {
           </div>
           <div className="relative px-4">
             {/* <!-- Connecting Line (Desktop) --> */}
-            <div className="hidden md:block absolute top-[26px] left-[10%] right-[10%] h-[3px] bg-gray-200 dark:bg-gray-800 z-0"></div>
+            <div className="hidden md:block absolute top-26px left-[10%] right-[10%] h-3px bg-gray-200 dark:bg-gray-800 z-0"></div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
               {/* <!-- Step 1 --> */}
               <div className="flex flex-col items-center text-center group">
                 <div className="w-14 h-14 rounded-full bg-white dark:bg-surface-dark border-2 border-primary text-primary flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-symbols-outlined">science</span>
+                  <span className="material-symbols-outlined"><IoFlaskOutline size={30}/></span>
                 </div>
                 <h4 className="text-lg font-bold mb-2">Substrate Prep</h4>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -221,7 +225,8 @@ export default function Showcase() {
               {/* <!-- Step 2 --> */}
               <div className="flex flex-col items-center text-center group">
                 <div className="w-14 h-14 rounded-full bg-white dark:bg-surface-dark border-2 border-primary text-primary flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-symbols-outlined">spoke</span>
+                  <span className="material-symbols-outlined"></span>
+                  <MdSpoke size={30}/>
                 </div>
                 <h4 className="text-lg font-bold mb-2">Spawning</h4>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -231,7 +236,7 @@ export default function Showcase() {
               {/* <!-- Step 3 --> */}
               <div className="flex flex-col items-center text-center group">
                 <div className="w-14 h-14 rounded-full bg-white dark:bg-surface-dark border-2 border-primary text-primary flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-symbols-outlined">humidity_high</span>
+                  <span className="material-symbols-outlined"><WiHumidity size={30}/></span>
                 </div>
                 <h4 className="text-lg font-bold mb-2">Incubation</h4>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -241,7 +246,7 @@ export default function Showcase() {
               {/* <!-- Step 4 --> */}
               <div className="flex flex-col items-center text-center group">
                 <div className="w-14 h-14 rounded-full bg-primary text-black flex items-center justify-center shadow-[0_0_20px_rgba(19,236,19,0.4)] mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-symbols-outlined">shopping_basket</span>
+                  <span className="material-symbols-outlined"><MdOutlineShoppingBasket size={30} /></span>
                 </div>
                 <h4 className="text-lg font-bold mb-2">Harvest</h4>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -292,7 +297,7 @@ export default function Showcase() {
                 //   background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHU1-qqOmSeVjwX5xBeRpv4XDkO774f0CA34E5mPI2oqFcVjxv3Jaw8KZh5vFMVdsc8FaIZd8ufPdkFoXvnHvfrWqfgSlZSTTK6YmBdf-O_ofm4vWxNJx7cczHz92zjoRio--5J-N2gZiNxIYGF-8d-1X7XTf_X8fBxEEAQB3KbzZ7pawX3Cg-QgbAhCi3i8ofUxRZBOcKRq0-ynx34yLDstx9zAvR6CDokC4d1_1HuNDTvoXpTkVTKq4QQC2q2qWxSe46SiL1FKY');
                 // "
                 ></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-tot from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <span className="text-white font-bold flex items-center gap-2">
                     View Recipe
                     <span className="material-symbols-outlined text-sm">
@@ -310,7 +315,7 @@ export default function Showcase() {
             </div>
             {/* <!-- Recipe Card 2 --> */}
             <div className="group cursor-pointer">
-              <div className="overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-800 relative aspect-[4/3] mb-4">
+              <div className="overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-800 relative aspect-4/3 mb-4">
                 <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold z-10">
                   <span className="material-symbols-outlined text-[14px] align-middle mr-1">
                     schedule
@@ -327,7 +332,7 @@ export default function Showcase() {
                 //   background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmfPGtCX6XPy-HC1pTk2IkUvmIERPPmGbutXONGHP_4eJVp5e1E8D_rdtRKmoh1ZcZuho_cc5JMvlMXedg_E2cfPu2VSQbYq9o5rIIHjkFMjlrBNJPk0HVdBK7ofI_bDtxeJsn7zpfCoFF39DCUrjFD7DCBsQTBIN3cUtNP-a0T-OvRCU3gHf-6aGoStAFCsnbqHfYD8Qk2Sc7Yp4n8j7zsXJIb6mgJviVml9RSQ0x6SnS_HkqgbAMDGR2dvn6i2kMv3_rWuyDzsw');
                 // "
                 ></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-tot from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <span className="text-white font-bold flex items-center gap-2">
                     View Recipe
                     <span className="material-symbols-outlined text-sm">
@@ -345,7 +350,7 @@ export default function Showcase() {
             </div>
             {/* <!-- Recipe Card 3 --> */}
             <div className="group cursor-pointer">
-              <div className="overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-800 relative aspect-[4/3] mb-4">
+              <div className="overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-800 relative aspect-4/3 mb-4">
                 <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold z-10">
                   <span className="material-symbols-outlined text-[14px] align-middle mr-1">
                     schedule
@@ -362,7 +367,7 @@ export default function Showcase() {
                 //   background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8c8bBrbqil14q4dJPOfZXoFw2e73DntSFJT_HwuQYNieQ43IMXhSsXwlV2SXIaEQF90FJkLF-oIFvPxoE0WJoMYuN_1MYrB48FSmLIoQqRkzRJkjlq20hr9kiecVzcEQtZSun_grj58XZcyMZWIGjb0fjKu7xd59f0feAKobLzHGJHR0IDsOHlKWzWHHDaSmyUcPz6YJ_JWiB49cCH7_3dCABVHhaRYD1L_DYy5NC7_Kwm_-hWZ0VUvqTWsXwQz2lHOhbaOJlYXE');
                 // "
                 ></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-tot from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <span className="text-white font-bold flex items-center gap-2">
                     View Recipe
                     <span className="material-symbols-outlined text-sm">
@@ -381,7 +386,7 @@ export default function Showcase() {
           </div>
         </section>
         {/* <!-- Bottom CTA --> */}
-        <section className="bg-[#e7f3e7] dark:bg-surface-dark rounded-2xl p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 mb-8 border border-primary/20">
+        <section className="bg-#e7f3e7 dark:bg-surface-dark rounded-2xl p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 mb-8 border border-primary/20">
           <div className="flex-1">
             <h2 className="text-2xl md:text-3xl font-bold mb-3 text-[#0d1b0d] dark:text-white">
               Ready to stock premium fungi?

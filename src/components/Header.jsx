@@ -3,7 +3,7 @@ import { FaTractor } from "react-icons/fa6";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7f3e7] dark:border-b-surface-dark bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md px-10 py-3 ">
+    <header className="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b[#e7f3e7] dark:border-b-surface-dark bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md px-10 py-3 ">
       <div className="flex items-center gap-4 text-text-main dark:text-white">
         <div className="size-8 flex items-center justify-center text-primary">
           {/*  <span className="material-symbols-outlined text-3xl">agriculture</span> */}
