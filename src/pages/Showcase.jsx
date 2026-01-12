@@ -1,0 +1,399 @@
+import React from "react";
+
+export default function Showcase() {
+  return (
+    <main>
+      <div className="flex flex-col min-h-screen w-full max-w-7xl mx-auto px-4 md:px-10 lg:px-20 py-8 gap-12">
+        {/* <!-- Hero Section --> */}
+        <section className="@container">
+          <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 items-center">
+            <div className="flex flex-col gap-6 flex-1 text-left">
+              <div className="flex flex-col gap-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 dark:bg-primary/20 w-fit">
+                  <span className="material-symbols-outlined text-primary text-sm">
+                    verified
+                  </span>
+                  <span className="text-primary text-xs font-bold uppercase tracking-wider">
+                    Premium Harvest
+                  </span>
+                </div>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-[-0.033em]">
+                  Premium Organic Oyster Mushrooms
+                </h1>
+                <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl">
+                  Cultivated with precision in our sterile, climate-controlled
+                  environments for superior texture, savory flavor, and maximum
+                  nutritional value.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-4 mt-2">
+                <button className="bg-primary hover:bg-[#0fd60f] text-[#0d1b0d] h-12 px-8 rounded-lg text-base font-bold transition-all shadow-[0_4px_14px_0_rgba(19,236,19,0.39)] flex items-center gap-2">
+                  <span className="material-symbols-outlined text-[20px]">
+                    download
+                  </span>
+                  Download Brochure
+                </button>
+                <button className="bg-surface-light dark:bg-surface-dark border border-gray-200 dark:border-gray-700 hover:border-primary dark:hover:border-primary text-current h-12 px-8 rounded-lg text-base font-bold transition-all flex items-center gap-2">
+                  Inquire Bulk Order
+                </button>
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 relative group">
+              <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-3xl transform rotate-3 scale-95 opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
+              <div
+                style={{
+                  backgroundImage:
+                    "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXpF8k1xv23r5m1wVIQbhzC49WvQhJmprDAS9Y_AvEEagbrjt38mMvCVKP0s7tg5NK-QRX9OuSkhPmgdDOPKpwaQqYaqzVzkRTeg6C52551Ei6G2JnKtSeqKzsYlhTQsd-FileX8D5T00Qn6BjbddJ3m-SGvJ3Z6Ez1TrLQjxSw0tYAQz1UGk7ZKxY2vgbpeTicaeuSCNB8WYRu9w2Aw2gGEOAL4yde4dQXq62R9QO8yMnB4NaU0GnGS__ow0n-LRugASxOVSlzrg')",
+                }}
+                className="relative w-full aspect-4/3 bg-gray-100 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl bg-cover bg-center"
+                data-alt="High resolution close up of fresh oyster mushrooms with dramatic lighting"
+              >
+                <div className="absolute bottom-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-4 py-2 rounded-lg text-xs font-bold border border-white/20">
+                  Fresh Harvest #402
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- Product Selector / Tabs --> */}
+        <section className="border-b border-[#cfe7cf] dark:border-[#2a442a] sticky top-[73px] bg-background-light dark:bg-background-dark z-40 pt-4">
+          <div className="flex overflow-x-auto no-scrollbar gap-8 pb-px">
+            <a
+              className="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-[#0d1b0d] dark:text-white min-w-max pb-3 px-2 transition-colors cursor-pointer group"
+              href="#"
+            >
+              <div className="bg-primary/10 p-2 rounded-full mb-2 group-hover:bg-primary/20 transition-colors">
+                <span className="material-symbols-outlined text-primary fill-current">
+                  temp_preferences_custom
+                </span>
+              </div>
+              <p className="text-sm font-bold tracking-wide">Oyster Mushroom</p>
+            </a>
+            <a
+              className="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary min-w-max pb-3 px-2 transition-colors cursor-pointer group"
+              href="#"
+            >
+              <div className="bg-gray-100 dark:bg-surface-dark p-2 rounded-full mb-2 group-hover:bg-primary/10 transition-colors">
+                <span className="material-symbols-outlined group-hover:text-primary">
+                  circle
+                </span>
+              </div>
+              <p className="text-sm font-bold tracking-wide">Button Mushroom</p>
+            </a>
+            <a
+              className="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary min-w-max pb-3 px-2 transition-colors cursor-pointer group"
+              href="#"
+            >
+              <div className="bg-gray-100 dark:bg-surface-dark p-2 rounded-full mb-2 group-hover:bg-primary/10 transition-colors">
+                <span className="material-symbols-outlined group-hover:text-primary">
+                  circle
+                </span>
+              </div>
+              <p className="text-sm font-bold tracking-wide">Milky Mushroom</p>
+            </a>
+          </div>
+        </section>
+        {/* <!-- About & Stats Grid --> */}
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 py-8">
+          {/* <!-- Text Content --> */}
+          <div className="lg:col-span-7 flex flex-col gap-6">
+            <div>
+              <h2 className="text-3xl font-bold leading-tight mb-4">
+                The Science of Spores
+              </h2>
+              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                Grown in a controlled, sterile environment, our Oyster mushrooms
+                offer a meaty texture and a delicate, savory flavor profile
+                perfect for gourmet applications. We utilize a proprietary
+                substrate mix that enhances the protein content and extends
+                shelf life naturally.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+              <div className="flex items-start gap-3 p-4 bg-surface-light dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
+                <span className="material-symbols-outlined text-primary mt-1">
+                  water_drop
+                </span>
+                <div>
+                  <h4 className="font-bold text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                    Moisture
+                  </h4>
+                  <p className="text-xl font-bold">88-90%</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-surface-light dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
+                <span className="material-symbols-outlined text-primary mt-1">
+                  thermostat
+                </span>
+                <div>
+                  <h4 className="font-bold text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                    Storage Temp
+                  </h4>
+                  <p className="text-xl font-bold">2°C - 4°C</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- Nutritional Data Cards --> */}
+          <div className="lg:col-span-5 flex flex-col justify-center">
+            <div className="bg-surface-light dark:bg-surface-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-800 shadow-lg relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-10 -mt-10"></div>
+              <h3 className="text-lg font-bold mb-6 flex items-center gap-2">
+                <span className="material-symbols-outlined text-primary">
+                  nutrition
+                </span>
+                Nutritional Profile
+                <span className="text-xs font-normal text-gray-500 ml-auto">
+                  per 100g
+                </span>
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-medium">Protein</span>
+                    <span className="font-bold">3.3g</span>
+                  </div>
+                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div
+                      className="bg-primary h-2 rounded-full w-[45%]"
+                      //   style="width: 45%"
+                    ></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-medium">Dietary Fiber</span>
+                    <span className="font-bold">2.3g</span>
+                  </div>
+                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div
+                      className="bg-primary h-2 rounded-full w-[35%]"
+                      //   style="width: 35%"
+                    ></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-medium">Potassium</span>
+                    <span className="font-bold">420mg</span>
+                  </div>
+                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div
+                      className="bg-primary h-2 rounded-full w-[65%]"
+                      //   style="width: 65%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- Cultivation Timeline --> */}
+        <section className="py-12">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold mb-3">From Lab to Table</h2>
+            <p className="text-gray-600 dark:text-gray-300">
+              Our rigorous 4-step organic cultivation process ensures
+              consistency and purity.
+            </p>
+          </div>
+          <div className="relative px-4">
+            {/* <!-- Connecting Line (Desktop) --> */}
+            <div className="hidden md:block absolute top-[26px] left-[10%] right-[10%] h-[3px] bg-gray-200 dark:bg-gray-800 z-0"></div>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+              {/* <!-- Step 1 --> */}
+              <div className="flex flex-col items-center text-center group">
+                <div className="w-14 h-14 rounded-full bg-white dark:bg-surface-dark border-2 border-primary text-primary flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="material-symbols-outlined">science</span>
+                </div>
+                <h4 className="text-lg font-bold mb-2">Substrate Prep</h4>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Sterilized wheat straw and organic supplements.
+                </p>
+              </div>
+              {/* <!-- Step 2 --> */}
+              <div className="flex flex-col items-center text-center group">
+                <div className="w-14 h-14 rounded-full bg-white dark:bg-surface-dark border-2 border-primary text-primary flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="material-symbols-outlined">spoke</span>
+                </div>
+                <h4 className="text-lg font-bold mb-2">Spawning</h4>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Inoculation with high-yield mother culture.
+                </p>
+              </div>
+              {/* <!-- Step 3 --> */}
+              <div className="flex flex-col items-center text-center group">
+                <div className="w-14 h-14 rounded-full bg-white dark:bg-surface-dark border-2 border-primary text-primary flex items-center justify-center shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="material-symbols-outlined">humidity_high</span>
+                </div>
+                <h4 className="text-lg font-bold mb-2">Incubation</h4>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  21 days in dark, humidity-controlled rooms.
+                </p>
+              </div>
+              {/* <!-- Step 4 --> */}
+              <div className="flex flex-col items-center text-center group">
+                <div className="w-14 h-14 rounded-full bg-primary text-black flex items-center justify-center shadow-[0_0_20px_rgba(19,236,19,0.4)] mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="material-symbols-outlined">shopping_basket</span>
+                </div>
+                <h4 className="text-lg font-bold mb-2">Harvest</h4>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Hand-picked at peak nutrient density.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- Culinary Showcase --> */}
+        <section className="py-8">
+          <div className="flex justify-between items-end mb-8">
+            <div>
+              <h2 className="text-3xl font-bold mb-2">
+                Versatility in the Kitchen
+              </h2>
+              <p className="text-gray-600 dark:text-gray-300">
+                Explore culinary possibilities with Sumedha Agro mushrooms.
+              </p>
+            </div>
+            <a
+              className="hidden md:flex items-center text-primary font-bold hover:underline gap-1"
+              href="#"
+            >
+              View all recipes
+              <span className="material-symbols-outlined text-sm">
+                arrow_forward
+              </span>
+            </a>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* <!-- Recipe Card 1 --> */}
+            <div className="group cursor-pointer">
+              <div className="overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-800 relative aspect-[4/3] mb-4">
+                <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold z-10">
+                  <span className="material-symbols-outlined text-[14px] align-middle mr-1">
+                    schedule
+                  </span>
+                  20 min
+                </div>
+                <div
+                style={{
+                    backgroundImage : "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHU1-qqOmSeVjwX5xBeRpv4XDkO774f0CA34E5mPI2oqFcVjxv3Jaw8KZh5vFMVdsc8FaIZd8ufPdkFoXvnHvfrWqfgSlZSTTK6YmBdf-O_ofm4vWxNJx7cczHz92zjoRio--5J-N2gZiNxIYGF-8d-1X7XTf_X8fBxEEAQB3KbzZ7pawX3Cg-QgbAhCi3i8ofUxRZBOcKRq0-ynx34yLDstx9zAvR6CDokC4d1_1HuNDTvoXpTkVTKq4QQC2q2qWxSe46SiL1FKY')"
+                }}
+                  className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Gourmet plate of pan seared oyster mushrooms with herbs"
+                //   style="
+                //   background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHU1-qqOmSeVjwX5xBeRpv4XDkO774f0CA34E5mPI2oqFcVjxv3Jaw8KZh5vFMVdsc8FaIZd8ufPdkFoXvnHvfrWqfgSlZSTTK6YmBdf-O_ofm4vWxNJx7cczHz92zjoRio--5J-N2gZiNxIYGF-8d-1X7XTf_X8fBxEEAQB3KbzZ7pawX3Cg-QgbAhCi3i8ofUxRZBOcKRq0-ynx34yLDstx9zAvR6CDokC4d1_1HuNDTvoXpTkVTKq4QQC2q2qWxSe46SiL1FKY');
+                // "
+                ></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <span className="text-white font-bold flex items-center gap-2">
+                    View Recipe
+                    <span className="material-symbols-outlined text-sm">
+                      arrow_forward
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                Pan-Seared Delight
+              </h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                Garlic butter glaze with fresh thyme.
+              </p>
+            </div>
+            {/* <!-- Recipe Card 2 --> */}
+            <div className="group cursor-pointer">
+              <div className="overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-800 relative aspect-[4/3] mb-4">
+                <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold z-10">
+                  <span className="material-symbols-outlined text-[14px] align-middle mr-1">
+                    schedule
+                  </span>
+                  45 min
+                </div>
+                <div
+                  className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Rich creamy mushroom soup in a rustic bowl"
+                  style={{
+                    backgroundImage : "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmfPGtCX6XPy-HC1pTk2IkUvmIERPPmGbutXONGHP_4eJVp5e1E8D_rdtRKmoh1ZcZuho_cc5JMvlMXedg_E2cfPu2VSQbYq9o5rIIHjkFMjlrBNJPk0HVdBK7ofI_bDtxeJsn7zpfCoFF39DCUrjFD7DCBsQTBIN3cUtNP-a0T-OvRCU3gHf-6aGoStAFCsnbqHfYD8Qk2Sc7Yp4n8j7zsXJIb6mgJviVml9RSQ0x6SnS_HkqgbAMDGR2dvn6i2kMv3_rWuyDzsw')"
+                  }}
+                //   style="
+                //   background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmfPGtCX6XPy-HC1pTk2IkUvmIERPPmGbutXONGHP_4eJVp5e1E8D_rdtRKmoh1ZcZuho_cc5JMvlMXedg_E2cfPu2VSQbYq9o5rIIHjkFMjlrBNJPk0HVdBK7ofI_bDtxeJsn7zpfCoFF39DCUrjFD7DCBsQTBIN3cUtNP-a0T-OvRCU3gHf-6aGoStAFCsnbqHfYD8Qk2Sc7Yp4n8j7zsXJIb6mgJviVml9RSQ0x6SnS_HkqgbAMDGR2dvn6i2kMv3_rWuyDzsw');
+                // "
+                ></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <span className="text-white font-bold flex items-center gap-2">
+                    View Recipe
+                    <span className="material-symbols-outlined text-sm">
+                      arrow_forward
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                Creamy Wild Soup
+              </h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                Rich umami flavor base for soups.
+              </p>
+            </div>
+            {/* <!-- Recipe Card 3 --> */}
+            <div className="group cursor-pointer">
+              <div className="overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-800 relative aspect-[4/3] mb-4">
+                <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold z-10">
+                  <span className="material-symbols-outlined text-[14px] align-middle mr-1">
+                    schedule
+                  </span>
+                  15 min
+                </div>
+                <div
+                  className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Crispy fried mushroom tempura with dipping sauce"
+                  style={{
+                    backgroundImage : "url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8c8bBrbqil14q4dJPOfZXoFw2e73DntSFJT_HwuQYNieQ43IMXhSsXwlV2SXIaEQF90FJkLF-oIFvPxoE0WJoMYuN_1MYrB48FSmLIoQqRkzRJkjlq20hr9kiecVzcEQtZSun_grj58XZcyMZWIGjb0fjKu7xd59f0feAKobLzHGJHR0IDsOHlKWzWHHDaSmyUcPz6YJ_JWiB49cCH7_3dCABVHhaRYD1L_DYy5NC7_Kwm_-hWZ0VUvqTWsXwQz2lHOhbaOJlYXE')"
+                  }}
+                //   style="
+                //   background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8c8bBrbqil14q4dJPOfZXoFw2e73DntSFJT_HwuQYNieQ43IMXhSsXwlV2SXIaEQF90FJkLF-oIFvPxoE0WJoMYuN_1MYrB48FSmLIoQqRkzRJkjlq20hr9kiecVzcEQtZSun_grj58XZcyMZWIGjb0fjKu7xd59f0feAKobLzHGJHR0IDsOHlKWzWHHDaSmyUcPz6YJ_JWiB49cCH7_3dCABVHhaRYD1L_DYy5NC7_Kwm_-hWZ0VUvqTWsXwQz2lHOhbaOJlYXE');
+                // "
+                ></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <span className="text-white font-bold flex items-center gap-2">
+                    View Recipe
+                    <span className="material-symbols-outlined text-sm">
+                      arrow_forward
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">
+                Crispy Tempura
+              </h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                Light batter, perfectly golden.
+              </p>
+            </div>
+          </div>
+        </section>
+        {/* <!-- Bottom CTA --> */}
+        <section className="bg-[#e7f3e7] dark:bg-surface-dark rounded-2xl p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 mb-8 border border-primary/20">
+          <div className="flex-1">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3 text-[#0d1b0d] dark:text-white">
+              Ready to stock premium fungi?
+            </h2>
+            <p className="text-gray-700 dark:text-gray-300 max-w-lg">
+              Partner with Sumedha Agro for consistent supply chains and
+              top-tier organic quality. We offer flexible bulk pricing.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+            <button className="bg-primary hover:bg-[#0fd60f] text-[#0d1b0d] h-12 px-8 rounded-lg text-base font-bold transition-all shadow-lg flex items-center justify-center gap-2 whitespace-nowrap">
+              Contact Sales
+            </button>
+            <button className="bg-transparent border-2 border-[#0d1b0d] dark:border-white text-[#0d1b0d] dark:text-white h-12 px-8 rounded-lg text-base font-bold transition-all hover:bg-[#0d1b0d] hover:text-white dark:hover:bg-white dark:hover:text-[#0d1b0d] flex items-center justify-center gap-2 whitespace-nowrap">
+              View Pricing
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}
