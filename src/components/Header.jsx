@@ -39,6 +39,12 @@ export default function Header() {
           >
             Contact
           </a>
+          <a
+            className="text-text-main dark:text-black text-sm font-medium leading-normal hover:text-primary transition-colors"
+            href="/Showcase"
+          >
+            showcase
+          </a>
         </div>
         <button className="px-6 py-2 rounded-full font-semisolid text-black bg-green-400 shadow-md hover:scale-105 transition-transform duration-200">
           <span className="truncate">Get a Quote</span>

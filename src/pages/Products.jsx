@@ -40,7 +40,7 @@ export default function Products() {
                 </h3>
               </div>
               <div className="flex flex-col gap-3">
-                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p[15px] hover:border-primary transition-colors">
+                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p-[15px] hover:border-primary transition-colors">
                   <input
                     checked=""
                     className="h-5 w-5 border-2 border-border-active bg-transparent text-transparent checked:border-primary checked:bg-primary checked:focus:border-primary focus:ring-0 focus:ring-offset-0 radio-checked-bg"
@@ -56,7 +56,7 @@ export default function Products() {
                     </p>
                   </div>
                 </label>
-                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p[15px] hover:border-primary transition-colors">
+                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p-[15px] hover:border-primary transition-colors">
                   <input
                     className="h-5 w-5 border-2 border-border-active bg-transparent text-transparent checked:border-primary checked:bg-primary checked:focus:border-primary focus:ring-0 focus:ring-offset-0 radio-checked-bg"
                     name="category"
@@ -71,7 +71,7 @@ export default function Products() {
                     </p>
                   </div>
                 </label>
-                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p[15px] hover:border-primary transition-colors">
+                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p-[15px] hover:border-primary transition-colors">
                   <input
                     className="h-5 w-5 border-2 border-border-active bg-transparent text-transparent checked:border-primary checked:bg-primary checked:focus:border-primary focus:ring-0 focus:ring-offset-0 radio-checked-bg"
                     name="category"
@@ -86,7 +86,7 @@ export default function Products() {
                     </p>
                   </div>
                 </label>
-                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p[15px] hover:border-primary transition-colors">
+                <label className="group cursor-pointer flex items-center gap-4 rounded-lg border border-solid border-border-active bg-white dark:bg-white/5 dark:border-white/10 p-[15px] hover:border-primary transition-colors">
                   <input
                     className="h-5 w-5 border-2 border-border-active bg-transparent text-transparent checked:border-primary checked:bg-primary checked:focus:border-primary focus:ring-0 focus:ring-offset-0 radio-checked-bg"
                     name="category"

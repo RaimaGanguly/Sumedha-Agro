@@ -1,4 +1,10 @@
 import React from "react";
+import { MdVerified } from "react-icons/md";
+import { FiDownload } from "react-icons/fi";
+import { FaDotCircle } from "react-icons/fa";
+import { BsStars } from "react-icons/bs";
+import { IoWater } from "react-icons/io5";
+import { TbTemperature } from "react-icons/tb";
 
 export default function Showcase() {
   return (
@@ -11,7 +17,7 @@ export default function Showcase() {
               <div className="flex flex-col gap-4">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 dark:bg-primary/20 w-fit">
                   <span className="material-symbols-outlined text-primary text-sm">
-                    verified
+                    <MdVerified />
                   </span>
                   <span className="text-primary text-xs font-bold uppercase tracking-wider">
                     Premium Harvest
@@ -29,7 +35,8 @@ export default function Showcase() {
               <div className="flex flex-wrap gap-4 mt-2">
                 <button className="bg-primary hover:bg-[#0fd60f] text-[#0d1b0d] h-12 px-8 rounded-lg text-base font-bold transition-all shadow-[0_4px_14px_0_rgba(19,236,19,0.39)] flex items-center gap-2">
                   <span className="material-symbols-outlined text-[20px]">
-                    download
+                    <FiDownload />
+
                   </span>
                   Download Brochure
                 </button>
@@ -64,7 +71,7 @@ export default function Showcase() {
             >
               <div className="bg-primary/10 p-2 rounded-full mb-2 group-hover:bg-primary/20 transition-colors">
                 <span className="material-symbols-outlined text-primary fill-current">
-                  temp_preferences_custom
+                  <BsStars Size={40}/>
                 </span>
               </div>
               <p className="text-sm font-bold tracking-wide">Oyster Mushroom</p>
@@ -75,7 +82,7 @@ export default function Showcase() {
             >
               <div className="bg-gray-100 dark:bg-surface-dark p-2 rounded-full mb-2 group-hover:bg-primary/10 transition-colors">
                 <span className="material-symbols-outlined group-hover:text-primary">
-                  circle
+                  <FaDotCircle />
                 </span>
               </div>
               <p className="text-sm font-bold tracking-wide">Button Mushroom</p>
@@ -86,7 +93,7 @@ export default function Showcase() {
             >
               <div className="bg-gray-100 dark:bg-surface-dark p-2 rounded-full mb-2 group-hover:bg-primary/10 transition-colors">
                 <span className="material-symbols-outlined group-hover:text-primary">
-                  circle
+                  <FaDotCircle />
                 </span>
               </div>
               <p className="text-sm font-bold tracking-wide">Milky Mushroom</p>
@@ -112,7 +119,7 @@ export default function Showcase() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
               <div className="flex items-start gap-3 p-4 bg-surface-light dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
                 <span className="material-symbols-outlined text-primary mt-1">
-                  water_drop
+                  <IoWater size={30}/>
                 </span>
                 <div>
                   <h4 className="font-bold text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">
@@ -123,7 +130,7 @@ export default function Showcase() {
               </div>
               <div className="flex items-start gap-3 p-4 bg-surface-light dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
                 <span className="material-symbols-outlined text-primary mt-1">
-                  thermostat
+                  <TbTemperature size={30}/>
                 </span>
                 <div>
                   <h4 className="font-bold text-sm uppercase tracking-wide text-gray-500 dark:text-gray-400">

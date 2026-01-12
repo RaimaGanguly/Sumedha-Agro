@@ -9,5 +9,7 @@
     --color-text-side :#006400;
     --color-background-even :#7fff00;
     --color-text-icon :#7fff00;
-    --color-primary :#13ec13
+    --color-primary :#13ec13;
+    --color-border-active : #cfe7cf;
+        --color-border-light: #e7f3e7
 }
