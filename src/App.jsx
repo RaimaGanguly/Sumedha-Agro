@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import { AiFillAccountBook } from "react-icons/ai";
 import Contact from './pages/Contact';
 import Showcase from './pages/Showcase';
+import About from './pages/About';
 
 
 
@@ -19,7 +20,7 @@ export default function App() {
         <Route path='/products' element={<Products />} />
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/showcase' element={<Showcase/>}/>
-        
+        <Route path='/About' element={<About/>}/>
       </Routes>
       <Footer/>
     </Router>

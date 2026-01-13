@@ -15,7 +15,7 @@ export default function Showcase() {
     <main>
       <div className="flex flex-col min-h-screen w-full max-w-7xl mx-auto px-4 md:px-10 lg:px-20 py-8 gap-12">
         {/* <!-- Hero Section --> */}
-        <section className="@container">
+        <section className="@container  bg-slate-50">
           <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="flex flex-col gap-6 flex-1 text-left">
               <div className="flex flex-col gap-4">
@@ -67,7 +67,7 @@ export default function Showcase() {
           </div>
         </section>
         {/* <!-- Product Selector / Tabs --> */}
-        <section className="border-b border-#cfe7cf dark:border-[#2a442a] sticky top-73px bg-background-light dark:bg-background-dark z-40 pt-4">
+        <section className="border-b  bg-slate-50 border-#cfe7cf dark:border-[#2a442a] sticky top-73px bg-background-light dark:bg-background-dark z-40 pt-4">
           <div className="flex overflow-x-auto no-scrollbar gap-8 pb-px">
             <a
               className="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-[#0d1b0d] dark:text-white min-w-max pb-3 px-2 transition-colors cursor-pointer group"
@@ -105,7 +105,7 @@ export default function Showcase() {
           </div>
         </section>
         {/* <!-- About & Stats Grid --> */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 py-8">
+        <section className="grid  bg-slate-50 grid-cols-1 lg:grid-cols-12 gap-10 py-8">
           {/* <!-- Text Content --> */}
           <div className="lg:col-span-7 flex flex-col gap-6">
             <div>
@@ -200,7 +200,7 @@ export default function Showcase() {
           </div>
         </section>
         {/* <!-- Cultivation Timeline --> */}
-        <section className="py-12">
+        <section className="py-12  bg-slate-50">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl font-bold mb-3">From Lab to Table</h2>
             <p className="text-gray-600 dark:text-gray-300">
@@ -257,7 +257,7 @@ export default function Showcase() {
           </div>
         </section>
         {/* <!-- Culinary Showcase --> */}
-        <section className="py-8">
+        <section className="py-8  bg-slate-50">
           <div className="flex justify-between items-end mb-8">
             <div>
               <h2 className="text-3xl font-bold mb-2">
@@ -386,7 +386,7 @@ export default function Showcase() {
           </div>
         </section>
         {/* <!-- Bottom CTA --> */}
-        <section className="bg-#e7f3e7 dark:bg-surface-dark rounded-2xl p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 mb-8 border border-primary/20">
+        <section className="bg-#e7f3e7  bg-slate-50 dark:bg-surface-dark rounded-2xl p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 mb-8 border border-primary/20">
           <div className="flex-1">
             <h2 className="text-2xl md:text-3xl font-bold mb-3 text-[#0d1b0d] dark:text-white">
               Ready to stock premium fungi?
