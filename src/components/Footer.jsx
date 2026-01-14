@@ -58,8 +58,8 @@ export default function Footer() {
 <div className="border-t border-slate-100 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-text-main/50 dark:text-slate-500">
 <p>© 2025 Sumedha Agro. All rights reserved.</p>
 <div className="flex gap-6">
-<a className="hover:text-text-main dark:hover:text-white transition-colors" href="#">Privacy Policy</a>
-<a className="hover:text-text-main dark:hover:text-white transition-colors" href="#">Terms of Service</a>
+<a className="hover:text-text-main dark:hover:text-white transition-colors" href="/Privacy">Privacy Policy</a>
+<a className="hover:text-text-main dark:hover:text-white transition-colors" href="/Termsofservices">Terms of Service</a>
 </div>
 </div>
 </div>

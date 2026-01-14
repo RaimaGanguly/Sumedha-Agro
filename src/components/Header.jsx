@@ -47,9 +47,11 @@ export default function Header() {
           </a>
        
         </div>
-        <button className="px-6 py-2 rounded-full font-semisolid text-black bg-green-400 shadow-md hover:scale-105 transition-transform duration-200">
+       <a href="/get-quote">
+         <button className="px-6 py-2 rounded-full font-semisolid text-black bg-green-400 shadow-md hover:scale-105 transition-transform duration-200">
           <span className="truncate">Get a Quote</span>
         </button>
+       </a>
       </div>
       <div classn="md:hidden">
         <button className="text-text-main dark:text-white"></button>
