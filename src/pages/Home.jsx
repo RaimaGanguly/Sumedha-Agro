@@ -223,7 +223,7 @@ export default function Home() {
         </div>
       </div>
       {/* <!-- About/Intro Section --> */}
-      <section
+      {/* <section
         className="py-16 px-4 md:px-20 lg:px-40 flex justify-center bg-white dark:bg-background-dark"
         id="story"
       >
@@ -238,7 +238,56 @@ export default function Home() {
             lies in the intelligent application of nature's resources.
           </p>
         </div>
-      </section>
+      </section> */}
+   <section
+  id="story"
+  className="relative py-24 px-4 md:px-20 lg:px-40 
+             bg-gradient-to-b from-[#f4fbf4] via-white to-white
+             dark:from-[#0b130b] dark:via-background-dark dark:to-background-dark
+             overflow-hidden"
+>
+  {/* Ambient glow blobs */}
+  <div className="absolute -top-32 -right-32 w-[420px] h-[420px] bg-[#13ec13]/20 blur-[140px] rounded-full"></div>
+  <div className="absolute -bottom-32 -left-32 w-[420px] h-[420px] bg-[#13ec13]/10 blur-[140px] rounded-full"></div>
+
+  <div className="relative max-w-4xl mx-auto text-center">
+    {/* Section badge */}
+    <div
+      className="inline-flex items-center px-4 py-1 mb-6 rounded-full
+                 bg-[#13ec13]/10 dark:bg-[#13ec13]/15
+                 text-[#0d1b0d] dark:text-[#13ec13]
+                 text-xs font-bold tracking-widest uppercase"
+    >
+      Our Vision
+    </div>
+
+    <h2
+      className="text-3xl md:text-4xl lg:text-5xl font-extrabold
+                 leading-tight tracking-tight
+                 text-[#0d1b0d] dark:text-white mb-6"
+    >
+      Bridging Technology and Farming
+    </h2>
+
+    <p
+      className="text-lg md:text-xl leading-relaxed
+                 text-[#3f5f3f] dark:text-gray-300
+                 max-w-3xl mx-auto"
+    >
+      Sumedha Agro is dedicated to sustainable farming practices,
+      leveraging modern technology to produce high-quality organic
+      mushrooms and derived products. We believe that the future of food
+      lies in the intelligent application of nature's resources.
+    </p>
+
+    {/* Brand divider */}
+    <div className="mt-12 flex justify-center">
+      <span className="h-[3px] w-28 rounded-full bg-gradient-to-r from-transparent via-[#13ec13] to-transparent"></span>
+    </div>
+  </div>
+</section>
+
+
       {/* <!-- Features Grid --> */}
       <section className="py-16 px-4 md:px-20 lg:px-40 bg-background-light dark:bg-surface-dark">
         <div className="max-w[1200px] mx-auto w-full">
