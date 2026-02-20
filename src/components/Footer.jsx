@@ -3,7 +3,7 @@ import { IoMdArrowForward } from "react-icons/io";
 import { FaTractor } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { CiShare2 } from "react-icons/ci";
-
+import logo from "../assets/Logo.png";
 
 
 export default function Footer() {
@@ -44,7 +44,7 @@ export default function Footer() {
 <div className="flex items-center gap-4 text-text-main dark:text-white">
   <div className="flex items-center justify-center">
     <img
-      src="/Logo.png" 
+      src={logo} 
       alt="Sumedha Agro Logo"
       className="h-10 w-auto object-contain"
     />
