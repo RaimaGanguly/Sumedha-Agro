@@ -7,6 +7,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 
 export default function CTA() {
+  const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,9 +22,29 @@ export default function CTA() {
       [e.target.name]: e.target.value,
     });
   };
+  const validateCTA = () => {
+  let newErrors = {};
+
+  if (!formData.name.trim()) {
+    newErrors.name = "Name is required";
+  }
+
+  if (!formData.email.trim()) {
+    newErrors.email = "Email is required";
+  } else if (!formData.email.includes("@")) {
+    newErrors.email = "Enter valid email";
+  }
+
+  setErrors(newErrors);
+
+  return Object.keys(newErrors).length === 0;
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validateCTA()) return;
+
+  // your existing fetch code here
 
 try {
     const response = await fetch("http://localhost:5000/api/contact", {
@@ -153,6 +174,9 @@ try {
                   value={formData.name}
                   onChange={handleChange}
                 />
+                {errors.name && (
+                  <p className="text-red-500 text-sm">{errors.name}</p>
+                )}
               </div>
               <div className="flex flex-col gap-2">
                 <label
@@ -188,6 +212,9 @@ try {
                 value={formData.email}
                 onChange={handleChange}
               />
+              {errors.email && (
+                <p className="text-red-500 text-sm">{errors.email}</p>
+              )}
             </div>
             <div className="flex flex-col gap-2">
               <label
