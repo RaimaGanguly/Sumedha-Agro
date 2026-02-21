@@ -74,7 +74,7 @@ if (!validate()) return;
       <section className="relative  bg-slate-50 px-6 py-12 lg:px-10 lg:py-20 max-w[1280px] mx-auto w-full">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-center">
           <div className="flex flex-col gap-6 lg:w-1/2">
-            <h1 className="text-4xl font-black leading-tight tracking-tight lg:text-6xl text-slate-900 dark:text-white">
+            <h1 className="text-4xl font-black leading-tight tracking-tight lg:text-6xl text-slate-900 dark:text-black">
               Let's Grow <span className="text-primary">Together</span>
             </h1>
             <p className="text-lg font-normal leading-relaxed text-slate-600 dark:text-slate-400 max-w[500px]">

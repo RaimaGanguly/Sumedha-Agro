@@ -28,7 +28,6 @@ const handleSubmit = () => {
 };
   return (
     <main>
-      <main>
         {/* <!-- Hero Section --> */}
         <div
           style={{
@@ -58,7 +57,7 @@ const handleSubmit = () => {
                 <span className="material-symbols-outlined text-text-main dark:text-white">
                   <IoFilter size={20} />
                 </span>
-                <h3 className="text-text-main dark:text-white text-lg font-bold">
+                <h3 className="text-text-main dark:text-black text-lg font-bold">
                   Categories
                 </h3>
               </div>
@@ -73,7 +72,7 @@ const handleSubmit = () => {
                     onChange={(e) => setSelectedCategory(e.target.value)}
                   />
                   <div className="flex grow flex-col">
-                    <p className="text-text-main dark:text-white text-sm font-medium leading-normal group-hover:text-primary transition-colors">
+                    <p className="text-text-main dark:text-black text-sm font-medium leading-normal group-hover:text-primary transition-colors">
                       All Products
                     </p>
                     <p className="text-text-side text-xs font-normal leading-normal">
@@ -95,7 +94,7 @@ const handleSubmit = () => {
                     onChange={(e) => setSelectedCategory(e.target.value)}
                   />
                   <div className="flex grow flex-col">
-                    <p className="text-text-main dark:text-white text-sm font-medium leading-normal group-hover:text-primary transition-colors">
+                    <p className="text-text-main dark:text-black text-sm font-medium leading-normal group-hover:text-primary transition-colors">
                       Seeds / Spawn
                     </p>
                     <p className="text-text-side text-xs font-normal leading-normal">
@@ -117,7 +116,7 @@ const handleSubmit = () => {
                     onChange={(e) => setSelectedCategory(e.target.value)}
                   />
                   <div className="flex grow flex-col">
-                    <p className="text-text-main dark:text-white text-sm font-medium leading-normal group-hover:text-primary transition-colors">
+                    <p className="text-text-main dark:text-black text-sm font-medium leading-normal group-hover:text-primary transition-colors">
                       Value-Added
                     </p>
                     <p className="text-text-side text-xs font-normal leading-normal">
@@ -139,7 +138,7 @@ const handleSubmit = () => {
                     onChange={(e) => setSelectedCategory(e.target.value)}
                   />
                   <div className="flex grow flex-col">
-                    <p className="text-text-main dark:text-white text-sm font-medium leading-normal group-hover:text-primary transition-colors">
+                    <p className="text-text-main dark:text-black text-sm font-medium leading-normal group-hover:text-primary transition-colors">
                       Fresh Produce
                     </p>
                     <p className="text-text-side text-xs font-normal leading-normal">
@@ -149,7 +148,7 @@ const handleSubmit = () => {
                 </label>
               </div>
               <div className="mt-9 p-8 bg-primary/10 rounded-xl border border-primary/20">
-                <h4 className="font-bold text-text-main dark:text-white mb-2">
+                <h4 className="font-bold text-text-main dark:text-black mb-2">
                   Need Custom Orders?
                 </h4>
                 <p className="text-sm text-text-side mb-4">
@@ -169,7 +168,7 @@ const handleSubmit = () => {
             {(selectedCategory === "all" || selectedCategory === "seeds") && (
             <section>
               <div className="flex items-center justify-between mb-6 border-b border-border-light pb-2">
-                <h2 className="text-text-main dark:text-white text-2xl font-bold leading-tight">
+                <h2 className="text-text-main dark:text-black text-2xl font-bold leading-tight">
                   Quality Seeds (Spawn)
                 </h2>
                 <a
@@ -243,7 +242,7 @@ const handleSubmit = () => {
                     </div>
                   </div>
                   <div className="p-5 flex flex-col flex-1">
-                    <h3 className="text-lg font-bold text-text-main dark:text-white mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="text-lg dark:text-white text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                       Button Mushroom Spawn
                     </h3>
                     <p className="text-text-side text-sm line-clamp-2 mb-4">
@@ -281,7 +280,7 @@ const handleSubmit = () => {
                     ></div>
                   </div>
                   <div className="p-5 flex flex-col flex-1">
-                    <h3 className="text-lg font-bold text-text-main dark:text-white mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="text-lg font-bold text-text-main dark:text-black mb-2 group-hover:text-primary transition-colors">
                       Milky Mushroom Spawn
                     </h3>
                     <p className="text-text-side text-sm line-clamp-2 mb-4">
@@ -313,7 +312,7 @@ const handleSubmit = () => {
             {(selectedCategory === "all" || selectedCategory === "value") && (
             <section>
               <div className="flex items-center justify-between mb-6 border-b border-border-light pb-2">
-                <h2 className="text-text-main dark:text-white text-2xl font-bold leading-tight">
+                <h2 className="text-text-main dark:text-black text-2xl font-bold leading-tight">
                   Value-Added Products
                 </h2>
                 <a
@@ -340,7 +339,7 @@ const handleSubmit = () => {
                     </div>
                   </div>
                   <div className="p-5 flex flex-col flex-1">
-                    <h3 className="text-lg font-bold text-text-main dark:text-white mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="text-lg font-bold text-text-main dark:text-black mb-2 group-hover:text-primary transition-colors">
                       Spicy Mushroom Pickle
                     </h3>
                     <p className="text-text-side text-sm line-clamp-2 mb-4">
@@ -378,7 +377,7 @@ const handleSubmit = () => {
                     ></div>
                   </div>
                   <div className="p-5 flex flex-col flex-1">
-                    <h3 className="text-lg font-bold text-text-main dark:text-white mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="text-lg font-bold text-text-main dark:text-black mb-2 group-hover:text-primary transition-colors">
                       Mushroom Protein Powder
                     </h3>
                     <p className="text-text-side text-sm line-clamp-2 mb-4">
@@ -423,7 +422,7 @@ const handleSubmit = () => {
             <span className="bg-white dark:bg-white/10 text-primary border border-primary/20 rounded-full px-3 py-1 text-xs font-bold tracking-wider uppercase mb-4">
               Partner With Us
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-text-main dark:text-White mb-4">
               Interested in Bulk Orders?
             </h2>
             <p className="text-text-side max-w-lg mb-8 text-lg">
@@ -438,7 +437,7 @@ const handleSubmit = () => {
                 setEmail(e.target.value);
               setError("");
                   }}
-                className="flex-1 bg-transparent border-none focus:ring-0 text-text-main dark:text-white placeholder:text-gray-400 px-4 py-3"
+                className="flex-1 bg-transparent border-none focus:ring-0 text-text-main dark:text-black placeholder:text-gray-400 px-4 py-3"
                 placeholder="Enter your email address"
               />
               <button
@@ -459,7 +458,6 @@ const handleSubmit = () => {
             </p>
           </div>
         </div>
-      </main>
     </main>
   );
 }
